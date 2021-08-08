@@ -1,8 +1,20 @@
 window.onload = function () {
-  var el = document
-    .querySelector("i")
-    .addEventListener("click", function (event) {
-      alert("Submit button is clicked!");
-      event.preventDefault();
-    });
+  const el = document.querySelectorAll(".fas");
+  console.log(el);
+  const preShare = document.getElementById("pre-share");
+  const postShare = document.getElementById("post-share");
+
+  function toggleShare() {
+    postShare.style.display == "none"
+      ? (postShare.style.display = "flex")
+      : (postShare.style.display = "none");
+
+    preShare.style.display == "none"
+      ? (preShare.style.display = "block")
+      : (preShare.style.display = "none");
+  }
+
+  el.forEach((button) => {
+    button.addEventListener("click", toggleShare);
+  });
 };

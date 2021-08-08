@@ -5,7 +5,7 @@
 
 body {
   font-family: "Manrope", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   text-align: left;
 }
 h2 {
@@ -23,7 +23,7 @@ p {
   background-color: #edf2f8;
 }
 
-.container {
+.padding {
   padding: 10% 5%;
 }
 
@@ -36,6 +36,7 @@ p {
 .header {
   background-color: #ffffff;
   padding: 3em 3em 2em 3em;
+  border-radius: 0 0 1em 1em;
 }
 .clearfix {
   overflow: auto;
@@ -79,4 +80,30 @@ picture > i {
 
 .fas:hover {
   color: hsl(214, 17%, 51%);
+}
+
+.flex-cover {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(214, 17%, 51%);
+  border-radius: 0 0 1em 1em;
+  padding: 20px;
+  color: hsl(210, 46%, 95%);
+}
+
+.share {
+  flex: 1;
+  color: hsl(212, 23%, 69%);
+}
+
+.flex-cover > .fab {
+  flex: 1;
+  display: inline-block;
+}
+
+.flex-cover > .fa-share-square {
+  float: right;
+  background-color: hsl(212, 23%, 69%);
+  border-radius: 5em;
 }
