@@ -7,6 +7,7 @@ body {
   font-family: "Manrope", sans-serif;
   font-size: 16px;
   text-align: left;
+  background-color: #edf2f8;
 }
 h2 {
   color: hsl(217, 19%, 35%);
@@ -19,12 +20,13 @@ p {
   margin-bottom: 3em;
 }
 
-.whole-page {
-  background-color: #edf2f8;
+.container {
+  width: 90%;
+  margin: 50px auto;
 }
 
 .padding {
-  padding: 10% 5% 0 5%;
+  padding: 10% 5% 5% 5%;
 }
 
 .picture > img {
@@ -35,7 +37,6 @@ p {
 
 .header {
   background-color: #ffffff;
-  padding: 3em 3em 2em 3em;
   border-radius: 0 0 1em 1em;
 }
 .clearfix {
@@ -83,7 +84,6 @@ picture > i {
 }
 
 .flex-cover {
-  justify-content: space-between;
   align-items: center;
   background-color: hsl(214, 17%, 51%);
   border-radius: 0 0 1em 1em;
@@ -96,16 +96,30 @@ picture > i {
   padding-right: 20px;
   letter-spacing: 3px;
 }
-.fab {
-  color: white;
-}
+
 .flex-cover > a {
   flex: 1;
   display: inline-block;
+  color: white;
+}
+
+.flex-cover .fas {
+  flex: 1;
+  display: inline-block;
+  color: white;
+  padding-right: ;
+}
+
+.flex-cover .fas:hover {
+  color: hsl(214, 17%, 51%);
+  color: black;
+}
+
+.flex-cover > a:hover {
+  color: hsl(212, 23%, 69%);
 }
 
 .flex-cover .fa-share-square {
   float: right;
-  background-color: hsl(212, 23%, 69%);
   border-radius: 5em;
 }
