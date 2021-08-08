@@ -31,6 +31,7 @@ p {
 
 .padding {
   padding: 10% 5% 5% 5%;
+  position: relative;
 }
 
 picture > i {
@@ -126,9 +127,28 @@ div.text-bottom > h4 > span {
   border-radius: 5em;
 }
 
+.desktop-share {
+  background-color: hsl(217, 19%, 35%);
+  align-items: center;
+  border-radius: 0.5em;
+  width: 200px;
+  position: absolute;
+  top: 220px;
+  right: -70px;
+  padding: 15px 20px;
+}
+
+.desktop-share a {
+  flex: 1;
+  color: white;
+}
+
 @media only screen and (min-width: 1052px) {
-  .container {
+  .flex {
     display: flex;
+  }
+
+  .footer {
   }
 
   .picture {

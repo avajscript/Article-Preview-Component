@@ -3,6 +3,7 @@ window.onload = function () {
   console.log(el);
   const preShare = document.getElementById("pre-share");
   const postShare = document.getElementById("post-share");
+  let container = document.querySelector(".container");
 
   function toggleShare() {
     postShare.style.display == "none"
