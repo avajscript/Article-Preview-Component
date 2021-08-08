@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -131,11 +132,12 @@ div.text-bottom > h4 > span {
   background-color: hsl(217, 19%, 35%);
   align-items: center;
   border-radius: 0.5em;
-  width: 200px;
+  width: 230px;
   position: absolute;
   top: 220px;
   right: -70px;
   padding: 15px 20px;
+  box-shadow: 0px 5px 10px 0px hsl(212, 23%, 69%);
 }
 
 .desktop-share a {
@@ -143,23 +145,32 @@ div.text-bottom > h4 > span {
   color: white;
 }
 
+.desktop-share a:hover {
+  color: hsl(212, 23%, 69%);
+}
+@media only screen and (max-width: 1051px) {
+  div.desktop-share {
+    display: none !important;
+  }
+}
 @media only screen and (min-width: 1052px) {
-  .flex {
-    display: flex;
-  }
-
-  .footer {
-  }
-
   .picture {
     flex: 1;
     max-width: 500px;
     margin-left: auto;
   }
+  .flex {
+    display: flex;
+  }
+
+  .padding {
+    padding: 40px 20px 20px 40px;
+  }
   .header {
     flex: 1;
     max-width: 700px;
     margin-right: auto;
+    max-height: 400px;
   }
 
   .picture > img {
@@ -168,5 +179,28 @@ div.text-bottom > h4 > span {
 
   .header {
     border-radius: 0 1em 1em 0;
+  }
+
+  .fixed-height {
+    height: 250px;
+  }
+
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+    position: absolute;
+    left: 105px;
+    bottom: -10px;
+  }
+
+  div.flex-cover {
+    display: none !important;
+  }
+
+  div.footer {
+    display: block !important;
   }
 }
