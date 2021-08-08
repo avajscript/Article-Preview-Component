@@ -20,6 +20,10 @@ p {
   margin-bottom: 3em;
 }
 
+.whole-page {
+  height: 100%;
+}
+
 .container {
   width: 90%;
   margin: 50px auto;
@@ -27,6 +31,10 @@ p {
 
 .padding {
   padding: 10% 5% 5% 5%;
+}
+
+picture > i {
+  float: right;
 }
 
 .picture > img {
@@ -102,7 +110,6 @@ div.text-bottom > h4 > span {
   flex: 1;
   display: inline-block;
   color: white;
-  padding-right: ;
 }
 
 .flex-cover .fas:hover {
@@ -119,16 +126,27 @@ div.text-bottom > h4 > span {
   border-radius: 5em;
 }
 
-@media screen and (min-width: 1052px) {
+@media only screen and (min-width: 1052px) {
   .container {
     display: flex;
   }
 
   .picture {
     flex: 1;
+    max-width: 500px;
+    margin-left: auto;
+  }
+  .header {
+    flex: 1;
+    max-width: 700px;
+    margin-right: auto;
+  }
+
+  .picture > img {
+    border-radius: 1em 0 0 1em;
   }
 
   .header {
-    flex: 1;
+    border-radius: 0 1em 1em 0;
   }
 }
