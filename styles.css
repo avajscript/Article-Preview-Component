@@ -70,11 +70,6 @@ div.text-bottom > h4 > span {
   margin-left: 0em;
 }
 
-picture > i {
-  float: right;
-  margin-top: 10px;
-}
-
 .fas {
   font-size: 30px;
 }
@@ -122,4 +117,18 @@ picture > i {
 .flex-cover .fa-share-square {
   float: right;
   border-radius: 5em;
+}
+
+@media screen and (min-width: 1052px) {
+  .container {
+    display: flex;
+  }
+
+  .picture {
+    flex: 1;
+  }
+
+  .header {
+    flex: 1;
+  }
 }
