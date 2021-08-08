@@ -35,7 +35,7 @@ p {
   position: relative;
 }
 
-picture > i {
+span > i {
   float: right;
 }
 
